@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <title>CSS</title>
+    </head>
+			<body style="background-color:gray;">
+				<div style="background-color:black;height:100px;width:100%;" >   
+					<center> <label style="color:green;font-size:100px;" > Cascading Style Sheets </label></center>
+				</div>
+					<CENTER><marquee behavior="alternate" direction="up" width="50%"><marquee  direction="right"> Cascading Style Sheets  </marquee></marquee></CENTER>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <center>
+
+          
+CASCADING STYLE SHEETS (CSS) – IT IS A LANGUAGE USED TO SPECIFY THE PRESENTATION ASPECTS (LAYOUT OR FORMATTING) OF THE DOUMENT</br>
+HAKON WIUM LIE AND BERT BOS – DEVELOPED CASCADING STYLE SHEETS</br>
+HAKON WIUM LIE – HTML CASCADING STYLE SHEETS / CHSS</br>
+BERT BOS – STREAM - BASED STYLE SHEET PRROPOSAL / SSP</br>
+VERSION</br>
+-	CSS 1</br>
+-	CSS 2</br>
+-	CSS 2.1</br>
+-	CSS 3 (STRUCTURAL SEMANTIC MARKUP / MODULARIZES CSS 2.1)</br>
+</br>
+</br>
+XHTML STYLE SHEETS</br>
+AUTHOR STYLES – CAN BE SPECIFY BY THE AUTHOR HIMSELF</br>
+</br>
+EXTERNAL STYLE SHEETS (RECOMMENDED)</br>
+	<link rel = “stylesheet” type=”test/css” href = ”style.css”> </br>
+EMBEDDED STYLES</br>
+	<style>
+		H1{
+			Font-size:1.5em;
+		} 
+	</style>
+</br></br>
+INLINE STYLES</br> 
+	<h1 style = ”color : fuschia”> HELLO, CSS</h1> </br>
+</br>
+</br>
+USERS STYLE – CAN BE SPECIFIED BY THE USER</br>
+USER AGENT STYLE – A BROWSER HAS DEFAULT STYLE SHEET</br>
+</br>
+</br>
+CSS STATEMENTS</br>
+At-Rules(@)</br>
+-	@charset</br>
+-	@import</br>
+-	@media</br>
+-	@font-face – allows the author to download fonts</br>
+-	@keyframes – it is used for animation</br>
+-	@page – characteristics of a page</br>
+</br>
+CSS RULE SET STRUCTURE – consists of a selector, followed by a declaration block, which contains zero or more semi-colon separated declarations which in turn consists of a property name followed by a colon, followed by the value</br>
+</br>
+</br>
+H1 – selector</br>
+{} – declaration block</br>
+Color:blue – declaration</br>
+Color – property</br>
+Blue – value</br>
+</br>
+CSS SELECTORS – IT IS USED TO SELECT ELEMENT OF INTEREST</br> 
+Matched element is called “subject” p[title]+#abc:first-child>span::first-letter</br>
+</br>
+</br>
+SELECTOR SYNTAX</br>
+-	SEQUENCE OF SIMPLE SELECTORS</br>
+-	CHAIN OF ONE MORE SEQUENCES OF SIMPLE SELECTORS SEPARATED BY A COMBINATORS</br>
+-	ALWAYS START WITH A TYPE SELECTOR OR UNIVERSAL SELECTOR</br>
+-	CANNOT CONTAIN OTHER TYPE OF SELECTORS OR UNIVERSAL SELECTORS </br>
+-	GROUP OF SELECTORS</br>
+-	COMMA SEPARATED LIST OF SELECTORS</br>
+</br>
+</br>	
+COMBINATORS</br>
+DESCENDANT COMBINATOR – WHITESPACE (space, tab, line, return)</br>
+CHILD COMBINATOR - ></br>
+</br>
+</br>
+SIBLING COMBINATORS</br>
+ADJACENT SIMBING COMBINATOR – (+) IMMEDIATELY FOLLOWS</br>
+GENERAL SIMBLING COMBINATOR – (-) ANYTHING THAT FOLLOWS</br>
+</br>
+</br>
+SIMPLE SELECTOR</br>
+	TYPE SELECTOR – IT MATCHES ELEMENTS (p,h1,h2,….)</br>
+		P{ </br>
+		} </br>
+	</br>
+	UNIVERSAL SELECTOR – IT MATCHES EVERYTHING (*)</br>
+		*{ </br>
+		} </br>
+</br>
+GROUPING SELECTOR</br>
+	H1,h2,h3{ </br>
+	} </br>
+</br>
+ATTRIBUTE SELECTOR – ALLOWS YOU TO SELECT BASED ON THE GIVEN ATTRIBUTE</br>
+[attr] – ANY</br>
+[attr=value] – SPECIFIC</br>
+[attr~=value] = THE VALUE IS ONE OF THE VARIANT</br>
+[attr|=value] = THE VALUE SHOULD BE THE BEGINNING</br>
+[attr^=value] – START (css3)</br>
+[attr$=value] – ENDS {CSS3)</br>
+[attr*=value] – contains (CSS3)</br>
+</br>
+</br>
+</br>
+CLASS SELECTOR</br>
+p.x{ </br>
+} </br>
+</br>
+ID SELECTOR</br>
+#nav{ </br>
+} </br>
+</br>
+DESCENDANT </br>
+div.content em { </br>
+} </br>
+</br>
+CHILD</br>
+div.content>em{ </br>
+} </br>
+</br>
+ADJACENT SIBLING</br>
+div[class==note]{ </br>
+} </br>
+</br>
+PSEUDO CLASS</br>
+-	STRUCTURAL PSEUDO CLASS</br>
+o	ROOT PSEUDO CLASS (:root) </br>
+o	FIRST CHILD PSEUDO CLASS (:first-child) </br>
+	Li:first-child{ </br>
+} </br>
+o	:last-child </br>
+o	:only-child </br>
+o	nth-child() </br>
+o	nth-last-child() </br>
+o	first-of-type</br>
+o	last-of-type</br>
+o	only-of-type</br>
+o	nth-of-type() </br>
+o	nth-of-last-typr() </br>
+o	:empty – ELEMENT WITH NO CHILDREN</br>
+-	TARGET PSEUDO CLASS</br>
+o	.target</br>
+-	LANGUAGE PSEUDO CLASS </br>
+o	:lang() </br>
+-	UI ELEMENT PSEUDO CLASS</br>
+o	:enabled</br>
+o	:disabled</br>
+o	:checked</br>
+o	:intermediated</br>
+-	LINK PSEUDO CLASS (DYNAMIC PSEUDO CLASS) </br>
+o	:link</br>
+o	:visited</br>
+-	USER ACTION PSEUDO CLASS (DYNAMIC PSEUDO CLASS) </br>
+o	:hover</br>
+o	:active</br>
+o	:focus</br>
+-	NEGATION PSEUDO CLASS </br>
+o	:not() </br>
+</br>
+PSEUDO ELEMENTS</br>
+::first-letter</br>
+::first-line</br>
+::before</br>
+::after</br>
+</br>
+</br>
+DECLARATION BLOCK</br>
+-	PROPERTIES</br>
+o	VISUAL, AURAL, PAGED, INTERACTIVE</br>
+o	MARGINS, BORDERS, AND PADDING</br>
+o	COLORS AND BACKGROUNDS</br>
+o	FONTS</br>
+o	TEXT FORMATTING</br>
+o	LISTS AND TABLES</br>
+o	POSITIONING AND DIMENSIONS</br>
+o	MISCELLANEOUS</br>
+-	VALUES</br>
+o	KEYWORDS</br>
+o	NUMBERS</br>
+o	DIMENSION</br>
+	LEMGTH UNITS: em ex px in   an in m pt pc</br>
+                 </br>                                                            Relative         Absolute</br>
+o	ABSOLUTE</br>
+o	COLORS</br>
+o	STRINGS</br>
+o	URLs</br>
+o	COUNTERS</br>
+o	INITIAL VALUES, INHERITED VALUES, IMPORTANT RULES</br>
+o	SPECIFIED, COMPUTED, USED, AND ACTUAL VALUES</br>
+</br>
+CSS RULE OF PRECEDENCE</br>
+-	BY ORIGIN AND IMPORTANCE</br>
+o	USER AGENT IMPORTANT DECLARATION</br>
+o	USER IMPORTANT DECLARATION</br>
+o	AUTHOR IMPORTANT DECLARATION</br>
+o	AUTHOR NORMAL DECALARATION</br>
+o	USER NORMAL DECLARATION</br>
+o	USER AGENT NORMAL DECLARATION</br>
+-	BY SPECIFICITY</br>
+o	INLINE STYLES (1) or not (0) </br>
+o	NUMBER OF ID SELECTORS</br>
+o	NUMBER OF CLASS SELECTORS, ATTRIBUTE SELECTORS AND PSEUDO CLASSES</br>
+o	NUMBER OF TYPE SELECTORS AND PSEUDO CLASS ELEMENTS</br>
+ CSS COMMENTS /* */    </br>
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/> 
+          <br/>
+<div style="background-color:black;">
+          <H3 style="color:green;">created by:<label style="color:green;font-size:50px;">Luke Llanillo</label>
+</div>
+      
+    </body>
+
+</html>
