@@ -1,0 +1,333 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="font-family:Arial">
+
+<h2>CSS</h2>
+<p>IT IS A LANGUAGE USED TO SPECIFY THE PRESENTATION ASPECTS (LAYOUT OR FORMATTING) OF THE DOUMENT</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>HAKON WIUM LIE</h2>
+    <p class"columns">&nbsp;HTML CASCADING STYLE SHEETS / CHSS</p>
+		<img src="images/snip2.jpg" height="170" width="150">
+		
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>BERT BOS</h2>
+    <p class"columns">&nbsp;STREAM - BASED STYLE SHEET PRROPOSAL / SSP</p>
+		<img src="images/snip3.jpg" height="170" width="200">
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2></h2>
+    <p class"columns">&nbsp;DEVELOPERS OF CASCADING STYLESHEETS</p>
+		<h1>CSS VERSIONS</h1>
+		<ul>
+			<li>CSS 1</li>
+			<li>CSS 2</li>
+			<li>CSS 2.1</li>
+			<li>CSS 3 (STRUCTURAL SEMANTIC MARKUP / MODULARIZES CSS 2.1)</li>
+		</ul>
+		</p>
+  </div>
+</div>
+
+<h1>XHTML STYLE SHEETS</h1>
+
+<div class="row1">
+  <div class="column1" style="background-color:#aaa;">
+    <h2>AUTHOR STYLES</h2>
+    <p>&nbsp;CAN BE SPECIFY BY THE AUTHOR HIMSELF</p></br>
+  </div>
+  <div class="column1" style="background-color:#bbb;">
+    <h2>EXTERNAL STYLE SHEETS</h2>
+    <p>&nbsp;RECOMMENDED STYLE TO USE FOR STYLING HTML DOCUMENTS</p>
+		<p>EXAMPLE:</br> 
+		<pre>&nbsp;<img src="images/snip.jpg"></pre></p></br>
+  </div>
+  <div class="column1" style="background-color:#ccc;">
+    <h2>INLINE STYLES</h2>
+    <p>&nbsp;A KIND OF STYLE THAT IS SET WITHIN THE ATTRIB</p>
+		<p>EXAMPLE:</br> 
+		<pre>&nbsp;<img src="images/snip1.jpg"></pre></p></br>
+  </div>
+    <div class="column1" style="background-color:#aaa;">
+    <h2>USERS STYLE</h2>
+    <p>&nbsp;CAN BE SPECIFIED BY THE USER</p></br>
+  </div>
+	<div class="column1" style="background-color:#bbb;">
+    <h2>USER AGENT STYLE</h2>
+    <p>&nbsp;A BROWSER HAS DEFAULT STYLE SHEET</p></br>
+  </div>
+</div>
+
+<h1>CSS STATEMENTS</h1>
+
+<div class="row2">
+  <div class="column2" style="background-color:#ccc;">
+    <h2>At-Rules(@)</h2>
+			<ul>
+			<li>@charset</li>
+			<li>@import</li>
+			<li>@media</li>
+			<li>@font-face – allows the author to download fonts</li>
+			<li>@keyframes – it is used for animation</li>
+			<li>@page – characteristics of a page</li>
+			<ul></br>
+  </div>
+	
+	<div class="column2" style="background-color:#aaa;">
+    <h2>CSS RULE SET STRUCTURE</h2>
+		<p>&nbsp;CONSISTS OF A SELECTOR, FOLLOWED BY A DECLARATION BLOCK, WHICH CONTAINS ZERO OR MORE 
+			 SEMI-COLON SEPARATED DECLARATIONS WHICH IN TURN CONSISTS OF A PROPERTY NAME FOLLOWED 
+			 BY A COLON, FOLLOWED BY THE VALUE</p>
+		<p>&nbsp;H1 – selector</br>
+			&nbsp;{} – declaration block</br>
+			&nbsp;Color:blue – declaration</br>
+			&nbsp;Color – property</br>
+			&nbsp;Blue – value</br>
+</p></br>
+  </div>
+		<div class="column1" style="background-color:#bbb;">
+    <h2>CSS SELECTORS</h2>
+    <p>&nbsp;IT IS USED TO SELECT ELEMENT OF INTEREST</p></br>
+  </div>
+  <div class="column2" style="background-color:#ccc;">
+    <h2>SELECTOR SYNTAX</h2>
+			<ul>
+		      <li>SEQUENCE OF SIMPLE SELECTORS</li>
+					<li>CHAIN OF ONE MORE SEQUENCES OF SIMPLE SELECTORS SEPARATED BY A COMBINATORS</li>
+					<li>ALWAYS START WITH A TYPE SELECTOR OR UNIVERSAL SELECTOR</li>
+					<li>CANNOT CONTAIN OTHER TYPE OF SELECTORS OR UNIVERSAL SELECTORS</li> 
+					<li>GROUP OF SELECTORS</li>
+					<li>COMMA SEPARATED LIST OF SELECTORS</li>
+				<ul></br>
+  </div>
+	 <div class="column2" style="background-color:#aaa;">
+    <h2>COMBINATORS</h2>
+			<ul>
+			<li>DESCENDANT COMBINATOR – WHITESPACE (space, tab, line, return)</li>
+			<li>CHILD COMBINATOR - ></li>
+			<li>SIBLING COMBINATORS
+			<ul>
+				<li>ADJACENT SIMBING COMBINATOR – (+) IMMEDIATELY FOLLOWS</li>
+				<li>GENERAL SIMBLING COMBINATOR – (-) ANYTHING THAT FOLLOWS</li>
+			</ul>	
+			</li>
+			<ul></br>
+  </div>
+	<div class="column2" style="background-color:#bbb;">
+    <h2>SIMPLE SELECTORS</h2>
+		<h3>TYPE SELECTOR – IT MATCHES ELEMENTS (p,h1,h2,….)</h3>
+		<p>EXAMPLE:</br> 
+		&nbsp;p{<br>
+		&nbsp;}</p></br>
+		<h3>UNIVERSAL SELECTOR(*)</h3>
+		<p>EXAMPLE:</br> 
+		&nbsp;*{<br>
+		&nbsp;}</p></br>
+  </div>
+	
+	<div class="column2" style="background-color:#ccc;">
+    <h2>GROUPING SELECTOR</h2>
+		<p>EXAMPLE:</br> 
+		&nbsp;h1,h2,h3{<br>
+		&nbsp;}</p></br>
+  </div>
+	
+	<div class="column2" style="background-color:#aaa;">
+    <h2>ATTRIBUTE SELECTOR</h2>
+		 <p class"columns">&nbsp;ALLOWS YOU TO SELECT BASED ON THE GIVEN ATTRIBUTE</p>
+		<ul>
+			<li>[attr] – ANY</li>
+			<li>[attr=value] – SPECIFIC</li>
+			<li>[attr~=value] = THE VALUE IS ONE OF THE VARIANT</li>
+			<li>[attr|=value] = THE VALUE SHOULD BE THE BEGINNING</li>
+			<li>[attr^=value] – START (css3)</li>
+			<li>[attr$=value] – ENDS {CSS3)</li>
+			<li>[attr*=value] – contains (CSS3)</li>
+		</ul></br>
+  </div>
+	
+	<div class="column2" style="background-color:#bbb;">
+    <h2>CLASS SELECTOR</h2>
+		<p>EXAMPLE:</br> 
+		&nbsp;p.x{<br>
+		&nbsp;}</p></br>
+  </div>
+	
+	<div class="column2" style="background-color:#ccc;">
+    <h2>ID SELECTOR</h2>
+		<p>EXAMPLE:</br> 
+		&nbsp;#nav{<br>
+		&nbsp;}</p></br>
+  </div>
+	
+	<div class="column2" style="background-color:#aaa;">
+    <h2>DESCENDANT</h2>
+		<p>EXAMPLE:</br> 
+		&nbsp;div.content em{<br>
+		&nbsp;}</p></br>
+  </div>
+	
+	<div class="column2" style="background-color:#bbb;">
+    <h2>CHILD</h2>
+		<p>EXAMPLE:</br> 
+		&nbsp;div.content>em{<br>
+		&nbsp;}</p></br>
+  </div>
+	
+	<div class="column2" style="background-color:#ccc;">
+    <h2>ADJACENT SIBLING</h2>
+		<p>EXAMPLE:</br> 
+		&nbsp;div[class==note]{<br>
+		&nbsp;}</p></br>
+  </div>
+</div>
+
+<h1>PSEUDO CLASS</h1>
+
+<div class="row2">
+  <div class="column2" style="background-color:#ccc;">
+    <h2>STRUCTURAL PSEUDO CLASS</h2>
+			<ul>
+			<li>ROOT PSEUDO CLASS</li>
+			<li>FIRST CHILD PSEUDO CLASS<ul>
+			<li>li:first-child{</br>
+					}</li>
+			</ul>
+			</li>
+			<li>:last-child</li>
+			<li>:only-child</li>
+			<li>nth-child()</li>
+			<li>nth-last-child()</li>
+			<li>first-of-type</li>
+			<li>nth-of-type()</li>
+			<li>nth-of-last-type()</li>
+			<li>:empty - ELEMENT WITH NO CHILDREN</li>
+			<ul></br>
+  </div>
+	
+	 <div class="column2" style="background-color:#aaa;">
+    <h2>TARGET PSEUDO CLASS</h2>
+			<ul>
+			<li>.target</li>
+			<ul></br>
+  </div>
+	
+	 <div class="column2" style="background-color:#bbb;">
+    <h2>LANGUAGE PSEUDO CLASS</h2>
+			<ul>
+			<li>.lang()</li>
+			<ul></br>
+  </div>
+	
+	 <div class="column2" style="background-color:#ccc;">
+    <h2>UI ELEMENT PSEUDO CLASS</h2>
+			<ul>
+			<li>:enabled</li>
+			<li>:disabled</li>
+			<li>:checked</li>
+			<li>:intermediated</li>
+			<ul></br>
+  </div>
+	
+	 <div class="column2" style="background-color:#aaa;">
+    <h2>LINK PSEUDO CLASS(DYNAMIC PSEUDO CLASS)</h2>
+			<ul>
+			<li>:link</li>
+			<li>:visited</li>
+			<ul></br>
+  </div>
+	
+	<div class="column2" style="background-color:#bbb;">
+    <h2>USER ACTION PSEUDO CLASS(DYNAMIC PSEUDO CLASS)</h2>
+			<ul>
+			<li>:hover</li>
+			<li>:active</li>
+			<li>:focus</li>
+			<ul></br>
+  </div>
+	
+	<div class="column2" style="background-color:#ccc;">
+    <h2>NEGATION PSEUDO CLASS</h2>
+			<ul>
+			<li>:not()</li>
+			<ul></br>
+  </div>
+</div>
+
+<h1>PSEUDO ELEMENTS</h1>
+
+<div class="row2">
+  <div class="column2" style="background-color:#aaa;">
+			<ul>
+			<li>::first-letter</li>
+			<li>::first-line<ul>
+			<li>::before</li>
+			<li>:::after</li>
+			<ul></br>
+  </div>
+</div>
+
+<h1>DELARATION BLOCK</h1>
+<div class="column2" style="background-color:#bbb;">
+    <h2>PROPERTIES</h2>
+			<ul>
+			<li>VISUAL, AURAL, PAGED, INTERACTIVE</li>
+	<li>MARGINS, BORDERS, AND PADDING</li>
+	<li>COLORS AND BACKGROUNDS</li>
+	<li>FONTS</li>
+	<li>TEXT FORMATTING</li>
+	<li>LISTS AND TABLES</li>
+	<li>POSITIONING AND DIMENSIONS</li>
+	<li>MISCELLANEOUS</li>
+	<ul></br>
+  </div>
+	
+<div class="column2" style="background-color:#ccc;">
+    <h2>VALUES</h2>
+			<ul>
+			<li>KEYWORDS</li>
+	<li>NUMBERS</li>
+	<li>DIMENSION</li>
+	<li>ABSOLUTE</li>
+	<li>COLORS</li>
+	<li>STRINGS</li>
+	<li>URLs</li>
+	<li>COUNTERS</li>
+	<li>INITIAL VALUES, INHERITED VALUES, IMPORTANT RULES</li>
+	<li>SPECIFIED, COMPUTED, USED, AND ACTUAL VALUES</li>
+	<ul></br>
+</div>
+</div>
+
+<h1>CSS RULE OF PRECEDENCE</h1>
+
+<h1>DELARATION BLOCK</h1>
+<div class="column2" style="background-color:#aaa;">
+    <h2>BY ORIGIN AND IMPORTANCE</h2>
+			<ul>
+			<li>USER AGENT IMPORTANT DECLARATION</li>
+			<li>USER IMPORTANT DECLARATION</li>
+			<li>AUTHOR IMPORTANT DECLARATION</li>
+			<li>AUTHOR NORMAL DECALARATION</li>
+			<li>USER NORMAL DECLARATION</li>
+			<li>USER AGENT NORMAL DECLARATION</li>
+			<ul></br>
+</div>
+	
+<div class="column2" style="background-color:#bbb;">
+    <h2>BY SPECIFICITY</h2>
+			<ul>
+			<li>INLINE STYLES (1) OR NOT (0)</li>
+			<li>NUMBER OF ID SELECTORS</li>
+			<li>NUMBER OF CLASS SELECTORS, ATTRIBUTE SELECTORS, AND PSEUDO CLASSES</li>
+			<li>NUMBER OF TYPE SELECTORS AND PSEUDO CLASS ELEMENTS</li>
+			<ul></br>
+		</div>
+</div>
+</body>
+</html>
